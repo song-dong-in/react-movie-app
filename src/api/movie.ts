@@ -1,4 +1,5 @@
 import axios ,{AxiosResponse} from 'axios';
+import { promises } from 'dns';
 
 
 type NowPlayingData = any;
@@ -12,6 +13,9 @@ const REST_API_ADDR = axios.create({
 });
 
 export const homeApi = {
-    
+    noePlaying : () : Promise<AxiosResponse<NowPlayingData>> => REST_API_ADDR.get("movie/now_playing"),
+    movieDetail : (id:number) : Promise<AxiosResponse<MovieDetailData>> =>REST_API_ADDR.get(`movie/${id}`,{
+        params:{append_toresonse : "videos"}
+    }),
 
 }
