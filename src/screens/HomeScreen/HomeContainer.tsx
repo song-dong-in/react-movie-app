@@ -26,7 +26,7 @@ class HomeContainer extends Component<{}, HomeContainerState>{
         try {
             const {data} = await homeApi.nowPlaying();
             const movieArray = data.results.map((result:any) => result.id);
-            const moviedId = movieArray[Math.floor(Math.random() * movieArray.length) ]
+            const moviedId = movieArray[Math.floor(Math.random() * movieArray.length)]
 
             try{
 
