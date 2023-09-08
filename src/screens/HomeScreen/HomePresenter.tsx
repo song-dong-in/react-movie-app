@@ -8,8 +8,6 @@ import QnA from '../../components/QnA/QnA';
 import Des from '../../components/Des/Des';
 
 
-
-
 interface HomePresenterProps {
   movieDetail: any;
   error: string | null;
