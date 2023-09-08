@@ -187,6 +187,7 @@ const Poster : React.FC<PosterProps> = ({
     );
 }
 
+
 Poster.propTypes ={
     id : PropTypes.number.isRequired,
     imageurl : PropTypes.string,
