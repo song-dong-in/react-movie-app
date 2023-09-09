@@ -10,6 +10,7 @@ import useInfiniteScroll from "../../utils/userInfiniteScroll";
 import { movieApi } from "../../api/movie";
 import uniqBy from 'lodash/uniqBy';
 
+
 interface MoviePresenterProps{
     nowPlaying: any[] | null;
     upcoming: any[] | null;
